@@ -13,7 +13,7 @@ public class Game {
   }
 
   private static void startWorkTrafficLight(int greenTime,int yellowTime, int redTime){
-    System.out.println("\t\t!!\t\tДля прерывания или изменения работы светофора нажмите любую клавишу\t\t!!");
+    System.out.println("\t\t!!\t\tДля прерывания или изменения работы светофора нажмите Enter\t\t!!");
     TrafficLight trafficLight = new TrafficLight(greenTime, yellowTime, redTime);
     trafficLight.start();
     stopOrChangeGame(trafficLight);
