@@ -1,11 +1,17 @@
 package io.khasang.courses.model;
 
 public class TrafficLight {
-    private int greenTime = 2;
-    private int yellowTime = 3;
-    private int redTime = 4;
+    private int greenTime;
+    private int yellowTime;
+    private int redTime;
 
-    public String getColorByTime(int time) {
+    public TrafficLight(int greenTime, int yellowTime, int redTime) {
+        this.greenTime = greenTime;
+        this.yellowTime = yellowTime;
+        this.redTime = redTime;
+    }
+
+    private String getColorByTime(int time) {
         String answer;
         int timeForCheck = time % (greenTime + yellowTime + redTime);
         if (timeForCheck <= greenTime) {

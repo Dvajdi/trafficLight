@@ -6,7 +6,7 @@ import io.khasang.courses.utils.ConsoleInputValues;
 public class startApp {
     public static void main(String[] args) {
         boolean stopWork = false;
-        TrafficLight trafficLight = new TrafficLight();
+        TrafficLight trafficLight = new TrafficLight(2, 3, 4);
         ConsoleInputValues consoleInputValues = new ConsoleInputValues();
 
         while (!stopWork) {
